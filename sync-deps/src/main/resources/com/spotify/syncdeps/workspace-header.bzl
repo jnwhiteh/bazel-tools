@@ -26,4 +26,4 @@ def default_maven_callback(name, licenses, jar_path, jar_sha256, srcjar_path = N
 
 def _maybe(repo_rule, name, **kwargs):
     if name not in native.existing_rules():
-        repo_rule(name = name, **kwargs)
+        repo_rule(rule_name = name, name = name, **kwargs)
